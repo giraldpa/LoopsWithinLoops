@@ -108,7 +108,7 @@ def draw_L(window, circle, r, c):
             new_circle = rg.Circle(rg.Point(x, y), radius)
             new_circle.fill_color = fill_color
             new_circle.attach_to(window)
-            window.render(.01)
+            window.render(.1)
         y = y + (2 * radius)
 
     for j in range(3):
@@ -117,7 +117,7 @@ def draw_L(window, circle, r, c):
             new_circle = rg.Circle(rg.Point(x, y), radius)
             new_circle.fill_color = fill_color
             new_circle.attach_to(window)
-            window.render(.01)
+            window.render(.1)
         y = y + (2 * radius)
 
 
@@ -174,7 +174,7 @@ def draw_wall_on_right(rectangle, n, window):
                 r_height / 2))
             new_rect = rg.Rectangle(corner_1, corner_2)
             new_rect.attach_to(window)
-            window.render()
+            window.render(.01)
             r_center_x = r_center_x - r_width
         r_center_y = r_center_y + r_height
 
