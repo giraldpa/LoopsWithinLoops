@@ -83,19 +83,6 @@ def draw_L(window, circle, r, c):
     # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
-    # original_x = circle.center.x
-    # original_y = circle.center.y
-    # radius = circle.radius
-    # x = original_x
-    # y = original_y
-    # for _ in range(r):
-    #     for _ in range(r):
-    #         new_circle = rg.Circle(rg.Point(x, y), radius)
-    #         new_circle.attach_to(window)
-    #         y = y + (2 * radius)
-    #
-    #     x = y + (2 * radius)
-
     x_original = circle.center.x
     y_original = circle.center.y
     radius = circle.radius
@@ -108,7 +95,7 @@ def draw_L(window, circle, r, c):
             new_circle = rg.Circle(rg.Point(x, y), radius)
             new_circle.fill_color = fill_color
             new_circle.attach_to(window)
-            window.render(.1)
+            window.render(.01)
         y = y + (2 * radius)
 
     for j in range(3):
@@ -117,7 +104,7 @@ def draw_L(window, circle, r, c):
             new_circle = rg.Circle(rg.Point(x, y), radius)
             new_circle.fill_color = fill_color
             new_circle.attach_to(window)
-            window.render(.1)
+            window.render(.01)
         y = y + (2 * radius)
 
 
